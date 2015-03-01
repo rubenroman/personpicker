@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/PersonPicker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        
+        android:src="@drawable/spinimage" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FF3333"
+        android:onClick="ONclick"
+        android:text="Decide"
+            android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txtRemaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:textSize="24sp"
+        android:text="Remaining" />
+
+    <TextView
+        android:id="@+id/txtSaved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="24sp"
+        android:layout_toRightOf="@+id/btnPlay"
+        android:text="Saved" />
+
+    <LinearLayout
+        android:id="@+id/llRemaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtRemaining"
+        android:layout_below="@+id/txtRemaining"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSaved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtSaved"
+        android:layout_alignTop="@+id/llRemaining"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    
+
+</RelativeLayout>
